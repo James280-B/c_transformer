@@ -1,0 +1,2 @@
+name,idx,input_neurons,output_neurons,ActFunc
+embedding,1,1,1

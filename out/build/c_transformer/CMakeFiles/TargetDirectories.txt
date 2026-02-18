@@ -1,0 +1,3 @@
+C:/repos/personal/c_projects/c_transformer/out/build/c_transformer/CMakeFiles/c_transformer.dir
+C:/repos/personal/c_projects/c_transformer/out/build/c_transformer/CMakeFiles/edit_cache.dir
+C:/repos/personal/c_projects/c_transformer/out/build/c_transformer/CMakeFiles/rebuild_cache.dir

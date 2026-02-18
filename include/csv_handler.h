@@ -19,15 +19,14 @@ class CSVHandler
         std::vector<std::vector<std::string>> ReadCSV(std::string file_name)
 
         {
-            std::vector<std::vector<std::string>> file_output;  //matrix class? eg df class
+            std::vector<std::vector<std::string>> file_output;  //matrix class? df class?
             std::ifstream file;
-
 
             file.open(file_name);
 
             if (!file.is_open())
             {
-                std::cerr << "file failed to open file" << std::endl;
+                perror("Error");
             }
 
             while (getline(file, line))

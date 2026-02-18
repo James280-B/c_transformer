@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    CSVHandler csv;
+    DataHandler csv;
     vector<vector<string>> output = csv.ReadCSV("data/nn_params.csv");
 
     for(int i=0; i<2; i++)

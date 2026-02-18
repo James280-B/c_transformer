@@ -6,15 +6,15 @@
 #include <sstream>
 #include <vector>
 
-class CSVHandler
+class DataHandler
 {
     protected:
         std::string line="", cell="";
 
     public:
-        CSVHandler() {}
+        DataHandler() {}
 
-        ~CSVHandler() {}
+        ~DataHandler() {}
 
         std::vector<std::vector<std::string>> ReadCSV(std::string file_name)
 

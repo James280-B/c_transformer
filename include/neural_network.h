@@ -26,9 +26,9 @@ class NeuralNetwork
             vector<Layer> network;
             vector<vector<string>> network_params;
 
-            DataHandler csv;
+            DataHandler data;
 
-            network_params = csv.ReadCSV("data/nn_params.csv");
+            network_params = data.ReadCSV("data/nn_params.csv");
 
             for (int i=0; i<network_params.size(); i++)
             {
@@ -40,7 +40,8 @@ class NeuralNetwork
 
                     switch (network_idx)
                     {
-                        case 1:
+                        //builds cbow network
+                        case 1:                            
                             //build input layer
                             input_layer.neurons = stoi(network_params[i][2]);   
                             input_layer.activation_function = network_params[i][4]; //TODO make actfunc class

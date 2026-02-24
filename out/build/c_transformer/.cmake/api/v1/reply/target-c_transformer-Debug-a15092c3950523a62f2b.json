@@ -113,7 +113,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/csv_handler.cpp",
+			"path" : "tests/unit_tests.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

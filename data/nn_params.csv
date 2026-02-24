@@ -1,2 +1,2 @@
-name,idx,input_neurons,output_neurons
-embedding,1,1,1
+name,idx,input_neurons,output_neurons,act_func
+cbow,1,10,100,softmax

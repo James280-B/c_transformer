@@ -71,29 +71,29 @@ include CMakeFiles/c_transformer.dir/flags.make
 CMakeFiles/c_transformer.dir/codegen:
 .PHONY : CMakeFiles/c_transformer.dir/codegen
 
-CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj: CMakeFiles/c_transformer.dir/flags.make
-CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj: CMakeFiles/c_transformer.dir/includes_CXX.rsp
-CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj: C:/repos/personal/c_projects/c_transformer/tests/csv_handler.cpp
-CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj: CMakeFiles/c_transformer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\repos\personal\c_projects\c_transformer\out\build\c_transformer\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj -MF CMakeFiles\c_transformer.dir\tests\csv_handler.cpp.obj.d -o CMakeFiles\c_transformer.dir\tests\csv_handler.cpp.obj -c C:\repos\personal\c_projects\c_transformer\tests\csv_handler.cpp
+CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj: CMakeFiles/c_transformer.dir/flags.make
+CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj: CMakeFiles/c_transformer.dir/includes_CXX.rsp
+CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj: C:/repos/personal/c_projects/c_transformer/tests/unit_tests.cpp
+CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj: CMakeFiles/c_transformer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\repos\personal\c_projects\c_transformer\out\build\c_transformer\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj -MF CMakeFiles\c_transformer.dir\tests\unit_tests.cpp.obj.d -o CMakeFiles\c_transformer.dir\tests\unit_tests.cpp.obj -c C:\repos\personal\c_projects\c_transformer\tests\unit_tests.cpp
 
-CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\repos\personal\c_projects\c_transformer\tests\csv_handler.cpp > CMakeFiles\c_transformer.dir\tests\csv_handler.cpp.i
+CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\repos\personal\c_projects\c_transformer\tests\unit_tests.cpp > CMakeFiles\c_transformer.dir\tests\unit_tests.cpp.i
 
-CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\repos\personal\c_projects\c_transformer\tests\csv_handler.cpp -o CMakeFiles\c_transformer.dir\tests\csv_handler.cpp.s
+CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\repos\personal\c_projects\c_transformer\tests\unit_tests.cpp -o CMakeFiles\c_transformer.dir\tests\unit_tests.cpp.s
 
 # Object files for target c_transformer
 c_transformer_OBJECTS = \
-"CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj"
+"CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj"
 
 # External object files for target c_transformer
 c_transformer_EXTERNAL_OBJECTS =
 
-c_transformer.exe: CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj
+c_transformer.exe: CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj
 c_transformer.exe: CMakeFiles/c_transformer.dir/build.make
 c_transformer.exe: CMakeFiles/c_transformer.dir/linkLibs.rsp
 c_transformer.exe: CMakeFiles/c_transformer.dir/objects1.rsp

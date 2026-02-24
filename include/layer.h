@@ -9,7 +9,7 @@ using namespace std;
 struct Layer
 {
     int neurons;
-    std::string activation_function;
+    string activation_function;
     vector<double> biases;
     vector<vector<double>> weights; //TODO: make matrix class?
 };

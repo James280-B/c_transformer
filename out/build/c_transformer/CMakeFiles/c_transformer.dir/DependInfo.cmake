@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/repos/personal/c_projects/c_transformer/tests/csv_handler.cpp" "CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj" "gcc" "CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj.d"
+  "C:/repos/personal/c_projects/c_transformer/tests/unit_tests.cpp" "CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj" "gcc" "CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

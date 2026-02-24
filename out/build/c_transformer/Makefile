@@ -128,29 +128,29 @@ c_transformer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\c_transformer.dir\build.make CMakeFiles/c_transformer.dir/build
 .PHONY : c_transformer/fast
 
-tests/csv_handler.obj: tests/csv_handler.cpp.obj
-.PHONY : tests/csv_handler.obj
+tests/unit_tests.obj: tests/unit_tests.cpp.obj
+.PHONY : tests/unit_tests.obj
 
 # target to build an object file
-tests/csv_handler.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\c_transformer.dir\build.make CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj
-.PHONY : tests/csv_handler.cpp.obj
+tests/unit_tests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\c_transformer.dir\build.make CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj
+.PHONY : tests/unit_tests.cpp.obj
 
-tests/csv_handler.i: tests/csv_handler.cpp.i
-.PHONY : tests/csv_handler.i
+tests/unit_tests.i: tests/unit_tests.cpp.i
+.PHONY : tests/unit_tests.i
 
 # target to preprocess a source file
-tests/csv_handler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\c_transformer.dir\build.make CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.i
-.PHONY : tests/csv_handler.cpp.i
+tests/unit_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\c_transformer.dir\build.make CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.i
+.PHONY : tests/unit_tests.cpp.i
 
-tests/csv_handler.s: tests/csv_handler.cpp.s
-.PHONY : tests/csv_handler.s
+tests/unit_tests.s: tests/unit_tests.cpp.s
+.PHONY : tests/unit_tests.s
 
 # target to generate assembly for a file
-tests/csv_handler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\c_transformer.dir\build.make CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.s
-.PHONY : tests/csv_handler.cpp.s
+tests/unit_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\c_transformer.dir\build.make CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.s
+.PHONY : tests/unit_tests.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... c_transformer
-	@echo ... tests/csv_handler.obj
-	@echo ... tests/csv_handler.i
-	@echo ... tests/csv_handler.s
+	@echo ... tests/unit_tests.obj
+	@echo ... tests/unit_tests.i
+	@echo ... tests/unit_tests.s
 .PHONY : help
 
 

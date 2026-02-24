@@ -4,7 +4,7 @@ project(c_transformer)
 set(CMAKE_CXX_STANDARD 17)
 set(PROJECT_ROOT "${CMAKE_SOURCE_DIR}")
 
-add_executable(c_transformer tests/csv_handler.cpp)
+add_executable(c_transformer tests/unit_tests.cpp)
 
 target_include_directories(c_transformer PRIVATE include)
 

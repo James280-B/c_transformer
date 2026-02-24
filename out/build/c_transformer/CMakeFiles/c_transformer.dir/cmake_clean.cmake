@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj"
-  "CMakeFiles/c_transformer.dir/tests/csv_handler.cpp.obj.d"
+  "CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj"
+  "CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj.d"
   "c_transformer.exe"
   "c_transformer.exe.manifest"
   "c_transformer.pdb"

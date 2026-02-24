@@ -26,6 +26,7 @@ void test_csv()
 void test_act_func_class()
 {
     //testing softmax
+    std::cout << "testing softmax: \n";
     vector<double> test_vec = {3.0, 2.0, 4.0}; 
     ActFunc act_func;
 
@@ -33,7 +34,6 @@ void test_act_func_class()
 
     for(int i=0; i<output.size(); i++)
     {
-        std::cout << "testing softmax: \n";
         std::cout << output[i] << std::endl;
     }
 }

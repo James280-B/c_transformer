@@ -6,21 +6,22 @@
 #include <sstream>
 #include <vector>
 
+using namespace std;
+
 class DataHandler
 {
     protected:
-        std::string line="", cell="";
+        string line="", cell="";
 
     public:
         DataHandler() {}
-
         ~DataHandler() {}
 
-        std::vector<std::vector<std::string>> ReadCSV(std::string file_name) //TODO: template implemntation needed
+        vector<vector<string>> ReadCSV(string file_name) //TODO: template implemntation needed
 
         {
-            std::vector<std::vector<std::string>> file_output;  //matrix class? df class?
-            std::ifstream file;
+            vector<vector<string>> file_output;  //matrix class? df class?
+            ifstream file;
 
             file.open(file_name);
 
@@ -31,10 +32,10 @@ class DataHandler
 
             while (getline(file, line))
             {
-                std::vector<std::string> row;
-                std::stringstream lineStream(line);
+                vector<string> row;
+                stringstream lineStream(line);
 
-                while (std::getline(lineStream, cell, ','))
+                while (getline(lineStream, cell, ','))
                 {
                     row.push_back(cell);
                 }

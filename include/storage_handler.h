@@ -5,26 +5,23 @@
 
 using namespace std;
 
-template <typename T>
-
-class StorageHandler
+template <typename T> class StorageHandler
 {
     protected:
         T data;
+        vector<T> storage_space;
 
     public:
-        StorageHandler() 
-        {
-            vector<T> storage_space;
-        }
+        StorageHandler() {}
 
         ~StorageHandler() {}
 
         insert(T data)
         {
-            //todo
+            storage_space.push_back(data);
+            return storage_space;
         }
-        
+
         vector<T> read_all()
         {
             return storage_space;

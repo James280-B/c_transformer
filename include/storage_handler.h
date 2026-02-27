@@ -1,5 +1,5 @@
-#ifndef __HASH_H__
-#define __HASH_H__ 
+#ifndef __STORAGE_H__
+#define __STORAGE_H__ 
 
 #include <vector>
 
@@ -10,7 +10,6 @@ template <typename T>
 class StorageHandler
 {
     protected:
-        int size;
         T data;
 
     public:
@@ -21,11 +20,15 @@ class StorageHandler
 
         ~StorageHandler() {}
 
-        insert()
+        insert(T data)
         {
-
+            //todo
         }
         
+        vector<T> read_all()
+        {
+            return storage_space;
+        }
 };
 
 #endif

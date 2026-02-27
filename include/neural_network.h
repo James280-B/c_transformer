@@ -92,6 +92,11 @@ class NeuralNetwork
         {
             // train neural network
         }
+
+        void feed_forward()
+        {
+            
+        }
     
 };
 

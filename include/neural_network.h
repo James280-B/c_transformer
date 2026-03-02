@@ -28,7 +28,7 @@ class NeuralNetwork
 
             DataHandler data;
 
-            network_params = data.ReadCSV("data/nn_params.csv");
+            network_params = data.read_csv("data/nn_params.csv");
 
             for (int i=0; i<network_params.size(); i++)
             {

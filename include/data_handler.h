@@ -7,7 +7,6 @@
 #include <vector>
 
 using namespace std;
-
 class DataHandler
 {
     protected:
@@ -17,7 +16,7 @@ class DataHandler
         DataHandler() {}
         ~DataHandler() {}
 
-        vector<vector<string>> ReadCSV(string file_name) //TODO: template implemntation needed
+        vector<vector<string>> read_csv(string file_name) //TODO: template implemntation needed
 
         {
             vector<vector<string>> file_output;  //matrix class? df class?
@@ -44,6 +43,39 @@ class DataHandler
             }
 
             return file_output;
+        }
+
+        vector<string> read_input_data(string file_name)
+        {
+            vector<string> output;
+            string str;
+            ifstream file;
+            char del = ' ';
+
+            file.open(file_name);
+
+            if (!file.is_open())
+            {
+                perror("Error");
+            }
+
+            while(getline(file, str))
+            {
+                stringstream ss(str);
+                string t;
+
+                while(getline(ss, t, del))
+                {
+                    output.push_back(t);
+                }
+            }
+
+            return output;
+        }
+
+        void write_to_dat(string file_name)
+        {
+            ofstream file(file_name);
         }
 };
 

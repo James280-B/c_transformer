@@ -1,62 +1,56 @@
 #ifndef __1HOTENC_H__
 #define __1HOTENC_H__
 
-#include <iostream>
+#include <algorithm>
 
+#include "token.h"
 #include "storage_handler.h"
-class InputEncoders
+class OneHotEncoding
 {
     protected:
-        StorageHandler<vector<bool>> storage;
+        int input_size;
+        vector<string> completed_words;
+        vector<token> duplicated_tokens;
 
     public:
-        InputEncoders() {}
-        ~InputEncoders() {} 
+        StorageHandler<token> encoder_storage;
 
-        void read_num_unique_words(vector<string> input)
+        OneHotEncoding(vector<string> input) 
         {
+            std::cout << "starting one hot encoding function" << std::endl;
 
-        }
+            int const input_size = input.size();
 
-        void implement_one_hot_encoding(vector<string> input)
-        {
-            int input_size = input.size();
-            for(int i=0; i<input.size(); i++)
+            for(int i=0; i<input_size; i++)
             {
-                std::cout << "completing run " << i << " of 1he" << std::endl;
-                vector<bool> encoded_word_vec(input_size, false);
-                encoded_word_vec[i] = true;
-                bool check = check_for_repeat(i);
-                std::cout << "check value" << std::endl;
-                std::cout << check << std::endl;
-                if(!check)
+                std::cout << "currently on word: " << i << std::endl;
+
+                auto it = find(completed_words.begin(), completed_words.end(), input[i]);
+
+                if(it != completed_words.end())
                 {
-                    storage.insert(encoded_word_vec);
-                } 
+                    std::cout << "duplicated word found" << std::endl;
+                    
+                    int idx = distance(completed_words.begin(), it);
+                    token tk(input_size, input[i]);
+                    tk.encoded_word_vec = duplicated_tokens[idx].encoded_word_vec;
+                    encoder_storage.insert(tk);
+                }
+
+                else
+                {
+                    std::cout << "adding new word" << std::endl;
+
+                    completed_words.push_back(input[i]);
+                    token tk(input_size, input[i]);
+                    tk.encoded_word_vec[i] = true;
+                    duplicated_tokens.push_back(tk);
+                    encoder_storage.insert(tk);
+                }
             }
         }
-
-        bool check_for_repeat(int idx)
-        {
-            std::cout << "completing run " << idx << " of check" << std::endl;
-            bool is_one = false;
-            vector<vector<bool>> stored_vecs = storage.read_all(); //todo upgrade later
-            
-            std::cout << "checking for first" << std::endl;
-            if(stored_vecs.size() == 0)
-            {
-                return is_one;
-            }
-
-            std::cout << "checking for 1" << std::endl;
-
-            if(stored_vecs[idx][idx])
-            {
-                is_one = true;
-            }
-
-            return is_one;
-        }
+        
+        ~OneHotEncoding() {} 
 };
 
 #endif

@@ -8,8 +8,10 @@ CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj: C:/repos/personal/c_proje
   C:/msys64/mingw64/include/_mingw_secapi.h \
   C:/msys64/mingw64/include/_mingw_stat64.h \
   C:/msys64/mingw64/include/_timeval.h \
+  C:/msys64/mingw64/include/c++/15.2.0/algorithm \
   C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h \
   C:/msys64/mingw64/include/c++/15.2.0/bit \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/algorithmfwd.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/allocated_ptr.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h \
@@ -68,20 +70,24 @@ CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj: C:/repos/personal/c_proje
   C:/msys64/mingw64/include/c++/15.2.0/bits/specfun.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/sstream.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
@@ -123,6 +129,8 @@ CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj: C:/repos/personal/c_proje
   C:/msys64/mingw64/include/c++/15.2.0/locale \
   C:/msys64/mingw64/include/c++/15.2.0/new \
   C:/msys64/mingw64/include/c++/15.2.0/ostream \
+  C:/msys64/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
   C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
   C:/msys64/mingw64/include/c++/15.2.0/ratio \
   C:/msys64/mingw64/include/c++/15.2.0/sstream \
@@ -207,7 +215,8 @@ CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj: C:/repos/personal/c_proje
   C:/repos/personal/c_projects/c_transformer/include/activation_functions.h \
   C:/repos/personal/c_projects/c_transformer/include/data_handler.h \
   C:/repos/personal/c_projects/c_transformer/include/one_hot_encoding.h \
-  C:/repos/personal/c_projects/c_transformer/include/storage_handler.h
+  C:/repos/personal/c_projects/c_transformer/include/storage_handler.h \
+  C:/repos/personal/c_projects/c_transformer/include/token.h
 
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h:
@@ -226,21 +235,25 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc:
 
 C:/msys64/mingw64/include/_mingw_mac.h:
 
+C:/msys64/mingw64/include/c++/15.2.0/filesystem:
+
+C:/msys64/mingw64/include/c++/15.2.0/algorithm:
+
 C:/msys64/mingw64/include/_mingw_off_t.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/ptr_traits.h:
 
-C:/msys64/mingw64/include/sec_api/wchar_s.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h:
+C:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr_base.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/fstream.tcc:
-
-C:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr_base.h:
 
 C:/msys64/mingw64/include/_mingw_stat64.h:
 
 C:/msys64/mingw64/include/_timeval.h:
+
+C:/msys64/mingw64/include/sec_api/wchar_s.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h:
 
@@ -255,6 +268,8 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/fs_ops.h:
 C:/msys64/mingw64/include/c++/15.2.0/bits/codecvt.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/algorithmfwd.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h:
 
@@ -368,6 +383,8 @@ C:/msys64/mingw64/include/c++/15.2.0/cerrno:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h:
+
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h:
@@ -376,11 +393,15 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h:
+
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h:
 
@@ -391,6 +412,10 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc:
 C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h:
+
+C:/msys64/mingw64/include/ctype.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/ios:
 
@@ -460,8 +485,6 @@ C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h:
 
-C:/msys64/mingw64/include/c++/15.2.0/filesystem:
-
 C:/msys64/mingw64/include/sched.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/fstream:
@@ -489,6 +512,10 @@ C:/msys64/mingw64/include/c++/15.2.0/locale:
 C:/msys64/mingw64/include/c++/15.2.0/new:
 
 C:/msys64/mingw64/include/c++/15.2.0/ostream:
+
+C:/msys64/mingw64/include/c++/15.2.0/pstl/execution_defs.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h:
 
@@ -574,8 +601,6 @@ C:/msys64/mingw64/include/corecrt_wstdlib.h:
 
 C:/msys64/mingw64/include/crtdefs.h:
 
-C:/msys64/mingw64/include/ctype.h:
-
 C:/msys64/mingw64/include/errno.h:
 
 C:/msys64/mingw64/include/malloc.h:
@@ -623,3 +648,5 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
 C:/repos/personal/c_projects/c_transformer/include/activation_functions.h:
 
 C:/repos/personal/c_projects/c_transformer/include/storage_handler.h:
+
+C:/repos/personal/c_projects/c_transformer/include/token.h:

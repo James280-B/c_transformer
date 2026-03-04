@@ -7,11 +7,10 @@ using namespace std;
 
 template <typename T> class StorageHandler
 {
-    protected:
-        vector<T> storage_space;
     public:
-        StorageHandler() {}
+        vector<T> storage_space;
 
+        StorageHandler() {}
         ~StorageHandler() {}
 
         void insert(T data)

@@ -64,23 +64,24 @@ void test_storage_class()
 void test_1he_class()
 {
     DataHandler data;
-    InputEncoders encoder;
-    StorageHandler<vector<bool>> storage;
+    vector<string> input_vec = data.read_input_data("data/test_input_data.txt");
 
-    vector<string> input_vec = data.read_input_data("data/test_input_data.txt"); //issue with data needing to be added
-    encoder.implement_one_hot_encoding(input_vec);
-    vector<vector<bool>> output = storage.read_all();
+    std::cout << "data read" << std::endl;
+
+    OneHotEncoding one_hot_encoder(input_vec);
+    vector<token> output = one_hot_encoder.encoder_storage.read_all();
+
+    std::cout << "output size " << output.size() << std::endl;
 
     std::cout << "outputting 1he result \n";
     for(int i=0; i<output.size(); i++)
     {
         std::cout << "word " << i << std::endl;
-        for(int j=0; j<output[i].size(); j++)
+        for(int j=0; j<output[i].encoded_word_vec.size(); j++)
         {
-            std::cout << output[i][j] << std::endl;
+            std::cout << output[i].encoded_word_vec[j] << std::endl;
         }
     }
-
     std::cout << "finish testing 1he class" << std::endl;
 }
 

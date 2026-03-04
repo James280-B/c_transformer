@@ -27,6 +27,7 @@ CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj: C:/repos/personal/c_proje
   C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
@@ -54,6 +55,7 @@ CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj: C:/repos/personal/c_proje
   C:/msys64/mingw64/include/c++/15.2.0/bits/move.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/nested_exception.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/node_handle.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
@@ -79,8 +81,11 @@ CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj: C:/repos/personal/c_proje
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multiset.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_set.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
@@ -133,6 +138,7 @@ CMakeFiles/c_transformer.dir/tests/unit_tests.cpp.obj: C:/repos/personal/c_proje
   C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
   C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
   C:/msys64/mingw64/include/c++/15.2.0/ratio \
+  C:/msys64/mingw64/include/c++/15.2.0/set \
   C:/msys64/mingw64/include/c++/15.2.0/sstream \
   C:/msys64/mingw64/include/c++/15.2.0/stdexcept \
   C:/msys64/mingw64/include/c++/15.2.0/stdlib.h \
@@ -235,6 +241,8 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc:
 
 C:/msys64/mingw64/include/_mingw_mac.h:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/node_handle.h:
+
 C:/msys64/mingw64/include/c++/15.2.0/filesystem:
 
 C:/msys64/mingw64/include/c++/15.2.0/algorithm:
@@ -308,6 +316,8 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/chrono.h:
 C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h:
 
@@ -399,9 +409,19 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
 
+C:/msys64/mingw64/include/sched.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/fstream:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multiset.h:
+
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_set.h:
+
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h:
 
@@ -485,10 +505,6 @@ C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h:
 
-C:/msys64/mingw64/include/sched.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/fstream:
-
 C:/msys64/mingw64/include/c++/15.2.0/initializer_list:
 
 C:/msys64/mingw64/include/c++/15.2.0/iomanip:
@@ -522,6 +538,8 @@ C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/ratio:
+
+C:/msys64/mingw64/include/c++/15.2.0/set:
 
 C:/msys64/mingw64/include/c++/15.2.0/sstream:
 

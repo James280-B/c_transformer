@@ -4,34 +4,29 @@
 #include <algorithm>
 #include <set>
 
-#include "token.h"
-#include "storage_handler.h"
-class OneHotEncoding
+#include "input_encoder.h"
+class OneHotEncoding : public InputEncoder
 {
-    protected:
-        int num_unique_words=0;
-        set<string> input_set;
+    private:
+        const set<string> input_set={};
 
     public:
-        StorageHandler<token> encoder_storage;
-
-        OneHotEncoding(vector<string> input) 
+        OneHotEncoding() : InputEncoder(InputEncoder::input_words_vec, InputEncoder::d_size)
         {
             std::cout << "starting one hot encoding function" << std::endl;
 
-            copy(input.begin(), input.end(), inserter(input_set, input_set.end()));
+            copy(InputEncoder::input_words_vec.begin(), 
+                 InputEncoder::input_words_vec.end(), 
+                 inserter(input_set, input_set.end())
+                ); //turn vec into set
 
-            int const num_unique_words = input_set.size();
-            
-            for(int i=0; i<num_unique_words; i++)
+            for(int i=0; i<InputEncoder::total_words; i++) //fix sizing issue
             {
-                token tk(num_unique_words, input[i]);
-                tk.encoded_word_vec[i] = true;
-                encoder_storage.insert(tk);
+                InputEncoder::input_encoder_storage.storage_space[i].one_hot_encoded_vec[i] = true;
             }
         }
         
-        ~OneHotEncoding() {} 
+        ~OneHotEncoding() {}
 };
 
 #endif

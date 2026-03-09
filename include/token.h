@@ -4,19 +4,23 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 class token
 {
     protected:
-        std::string word;
+        string word;
     
     public:
-        std::vector<bool> encoded_word_vec;
-        token(int vec_size, std::string input) 
+        vector<bool> one_hot_encoded_vec;
+        vector<double> pos_encoded_vec;
+
+        token(int const vec_size, string input) 
         {
             word = input;
             for(int i=0; i<vec_size; i++)
             {
-                encoded_word_vec.push_back(false); //more efficient?
+                one_hot_encoded_vec.push_back(false); //more efficient?
             }
         }
 };

@@ -13,12 +13,12 @@ template <typename T> class StorageHandler
         StorageHandler() {}
         ~StorageHandler() {}
 
-        void insert(T data)
+        void Insert(T data)
         {
             storage_space.push_back(data);
         }
 
-        vector<T> read_all()
+        vector<T> ReadStorageSpace()
         {
             return storage_space;
         }

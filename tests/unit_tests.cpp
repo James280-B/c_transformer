@@ -8,7 +8,7 @@ using namespace std;
 
 //testing csv function : data handler class
 
-void test_csv()
+void TestCSV()
 {
     DataHandler data;
     vector<vector<string>> output = data.read_csv("data/nn_params.csv");
@@ -24,7 +24,7 @@ void test_csv()
 }
 
 //testing softmax function : actfunc class 
-void test_act_func_class()
+void TestActFuncClass()
 {
     //testing softmax
     std::cout << "testing softmax: \n";
@@ -40,16 +40,16 @@ void test_act_func_class()
 }
 
 //testing storage class
-void test_storage_class()
+void TestStorageClass()
 {
     StorageHandler<vector<bool>> storage;
     for(int i=0; i<2; i++)
     {
         vector<bool> a(2, true);
         a[i] = false;
-        storage.insert(a);
+        storage.Insert(a);
     }
-    vector<vector<bool>> data = storage.read_all();
+    vector<vector<bool>> data = storage.ReadStorageSpace();
 
     for(int j=0; j<data.size(); j++)
     {
@@ -61,7 +61,7 @@ void test_storage_class()
 }
 
 //testing one hot encoding class
-void test_1he_class()
+void TestOneHotEncodingClass()
 {
     DataHandler data;
     vector<string> input_vec = data.read_input_data("data/test_input_data.txt");
@@ -69,7 +69,7 @@ void test_1he_class()
     std::cout << "data read" << std::endl;
 
     OneHotEncoding one_hot_encoder(input_vec);
-    vector<token> output = one_hot_encoder.encoder_storage.read_all();
+    vector<token> output = one_hot_encoder.encoder_storage.ReadStorageSpace();
 
     std::cout << "output size " << output.size() << std::endl;
 
@@ -77,9 +77,9 @@ void test_1he_class()
     for(int i=0; i<output.size(); i++)
     {
         std::cout << "word " << i << std::endl;
-        for(int j=0; j<output[i].encoded_word_vec.size(); j++)
+        for(int j=0; j<output[i].one_hot_encoded_vec.size(); j++)
         {
-            std::cout << output[i].encoded_word_vec[j] << std::endl;
+            std::cout << output[i].one_hot_encoded_vec[j] << std::endl;
         }
     }
     std::cout << "finish testing 1he class" << std::endl;
@@ -87,10 +87,10 @@ void test_1he_class()
 
 int main()
 {
-    //test_csv();
-    //test_act_func_class();
-    //test_storage_class();
-    test_1he_class();
+    //TestCSV();
+    //TestActFuncClass();
+    //TestStorageClass();
+    TestOneHotEncodingClass();
     
     return 0;
 }

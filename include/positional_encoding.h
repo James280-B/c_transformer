@@ -8,16 +8,14 @@
 class PositionalEnconding : InputEncoder
 {
     private:
-        const int param_conant = 10000;
+        const int param_conant = 10000; //todo fix constants 
         double exp_term = 0.0;
 
     public:
-        PositionalEnconding() : InputEncoder(InputEncoder::input_words_vec, InputEncoder::d_size)
+        PositionalEnconding() : InputEncoder(InputEncoder::input_words_vec, InputEncoder::d_size) //make into functions
         {
             for(int pos=1; pos<InputEncoder::total_words+1; pos++)
             {
-                token tk(total_words, InputEncoder::input_words_vec[pos]);
-
                 for(int i=0; i<InputEncoder::d_size; i++)
                 {
                     double exp_term = (2*i)/d_size;

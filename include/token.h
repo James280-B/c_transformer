@@ -15,10 +15,12 @@ class token
         vector<bool> one_hot_encoded_vec;
         vector<double> pos_encoded_vec;
 
-        token(int const vec_size, string input) 
+        token(int const input_vec_size, int const input_set_size, string const input_word) 
         {
-            word = input;
-            for(int i=0; i<vec_size; i++)
+            word = input_word;
+            pos_encoded_vec.assign(input_vec_size, 0);
+
+            for(int i=0; i<input_set_size; i++)
             {
                 one_hot_encoded_vec.push_back(false); //more efficient?
             }
